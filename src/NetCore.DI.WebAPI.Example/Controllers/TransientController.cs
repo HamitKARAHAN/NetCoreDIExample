@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using NetCore.DI.Services.Example;
-using Newtonsoft.Json;
+using NetCore.DI.WebAPI.Example.Models;
 
 namespace NetCore.DI.WebAPI.Example.Controllers
 {

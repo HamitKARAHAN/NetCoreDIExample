@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using NetCore.DI.Services.Example;
+using NetCore.DI.WebAPI.Example.Models;
 
 namespace NetCore.DI.WebAPI.Example.Controllers
 {

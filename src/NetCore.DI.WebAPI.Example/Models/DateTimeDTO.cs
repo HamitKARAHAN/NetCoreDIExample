@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace NetCore.DI.WebAPI.Example
+namespace NetCore.DI.WebAPI.Example.Models
 {
     public class DateTimeDTO
     {
