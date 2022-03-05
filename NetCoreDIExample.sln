@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCore.DI.WebAPI.Example",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCore.DI.Services.Example", "src\NetCore.DI.Services.Example\NetCore.DI.Services.Example.csproj", "{9C9677D4-C938-49A6-A63B-9784F2810D30}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{55405B17-E342-4246-8448-EF047D5C1DFD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{B7223844-65D4-484D-8DAB-A6A1F7240F75}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +28,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D7E6B24F-4E97-4CF5-AFCB-0221BBE1FA07} = {B7223844-65D4-484D-8DAB-A6A1F7240F75}
+		{9C9677D4-C938-49A6-A63B-9784F2810D30} = {55405B17-E342-4246-8448-EF047D5C1DFD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {12707007-CA85-4DCA-90B0-0337C1278D38}
