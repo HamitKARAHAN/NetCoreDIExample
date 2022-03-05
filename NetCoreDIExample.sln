@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCore.DI.WebAPI.Example", "NetCore.DI.WebAPI.Example\NetCore.DI.WebAPI.Example.csproj", "{D7E6B24F-4E97-4CF5-AFCB-0221BBE1FA07}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCore.DI.WebAPI.Example", "src\NetCore.DI.WebAPI.Example\NetCore.DI.WebAPI.Example.csproj", "{D7E6B24F-4E97-4CF5-AFCB-0221BBE1FA07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCore.DI.Services.Example", "NetCore.DI.Services.Example\NetCore.DI.Services.Example.csproj", "{9C9677D4-C938-49A6-A63B-9784F2810D30}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCore.DI.Services.Example", "src\NetCore.DI.Services.Example\NetCore.DI.Services.Example.csproj", "{9C9677D4-C938-49A6-A63B-9784F2810D30}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
