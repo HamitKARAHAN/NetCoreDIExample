@@ -9,12 +9,16 @@ namespace NetCore.DI.WebAPI.Example.Controllers
     public class ScopedController : ControllerBase
     {
         private readonly IScopedDateService _scopedDateService;
+        private readonly ILogger<ScopedController> _logger;
 
         public ScopedController(
-                 IScopedDateService scopedDateService
+                 IScopedDateService scopedDateService,
+                 ILogger<ScopedController> logger
             )
         {
             _scopedDateService = scopedDateService;
+            _logger=logger;
+            _logger.LogInformation("Scoped Controller is running...");
         }
 
         [HttpGet]

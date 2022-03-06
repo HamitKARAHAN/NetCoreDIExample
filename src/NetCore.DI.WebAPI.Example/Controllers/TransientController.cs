@@ -4,17 +4,21 @@ using NetCore.DI.WebAPI.Example.Models;
 
 namespace NetCore.DI.WebAPI.Example.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
+    [Route("api/[controller]")]
     public class TransientController : ControllerBase
     {
         private readonly ITransientDateService _transientDateService;
+        private readonly ILogger<TransientController> _logger;
 
         public TransientController(
-                 ITransientDateService transientDateService
+                 ITransientDateService transientDateService, 
+                 ILogger<TransientController> logger
             )
         {
             _transientDateService = transientDateService;
+            _logger = logger;
+            _logger.LogInformation("Transient Controller is running...");
         }
 
         [HttpGet]

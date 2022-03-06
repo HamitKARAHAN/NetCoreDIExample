@@ -9,12 +9,16 @@ namespace NetCore.DI.WebAPI.Example.Controllers
     public class SingletonController : ControllerBase
     {
         private readonly ISingletonDateService _singletonDateService;
+        private readonly ILogger<SingletonController> _logger;
 
         public SingletonController(
-                 ISingletonDateService singletonDateService
+                 ISingletonDateService singletonDateService,
+                 ILogger<SingletonController> logger
             )
         {
             _singletonDateService = singletonDateService;
+            _logger = logger;
+            _logger.LogInformation("Singleton Controller is running...");
         }
 
         [HttpGet]

@@ -8,7 +8,7 @@ namespace NetCore.DI.Services.Example
         public DateTimeService(ILogger<DateTimeService> logger)
         {
             _logger=logger;
-            _logger.LogInformation("DateTimeService is running...");
+            _logger.LogInformation("DateTime Service is running...");
         }
         public Task<TimeSpan> GetDateTime { get; init; } = Task.FromResult(DateTime.Now.TimeOfDay);
     }
